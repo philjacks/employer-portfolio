@@ -237,19 +237,6 @@ main {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
 
-      #img1 {
-        border-radius: 5px 0 0 0;
-      }
-      #img2 {
-        border-radius: 0 5px 0 0;
-      }
-      #img3 {
-        border-radius: 0 0 0 5px;
-      }
-      #img4 {
-        border-radius: 0 0 5px 0;
-      }
-
       .overlay {
         display: flex;
         flex-direction: column;
@@ -310,6 +297,7 @@ main {
             &:hover {
               background-color: $tertiary-color;
               color: $primary-color;
+              transition: 0.5s ease;
 
               i {
                 color: $primary-color;
@@ -355,99 +343,9 @@ footer {
     &:hover {
       cursor: pointer;
       color: $secondary-color;
+      transition: 0.5s ease;
     }
   }
 }
 
-@media screen and (max-width: 950px) {
-  nav {
-    ul {
-      flex-direction: column;
-
-      li {
-        width: 100%;
-      }
-
-      .nav-left {
-        border-width: 1px 1px 1px 0;
-        border-style: none none solid solid;
-
-        .overlay {
-          font-size: 0.7rem;
-        }
-      }
-    }
-  }
-  main {
-    .heading {
-      text-align: left;
-
-      h1 {
-        margin: 0;
-        width: 90%;
-      }
-    }
-
-    .socials {
-      width: 80%;
-    }
-
-    .projects {
-      grid-template-columns: 1fr;
-
-      .item {
-        .overlay {
-          justify-content: flex-start;
-          flex-wrap: wrap;
-          padding: 0;
-
-          h3 {
-            font-size: 0.7rem;
-            padding: 0.8rem;
-          }
-
-          p {
-            font-size: 0.7rem;
-            padding: 0.7rem;
-          }
-
-          ul {
-            li {
-              font-size: 0.6rem;
-              padding: 0;
-            }
-          }
-
-          .project-links {
-            a {
-              font-size: 1rem;
-              padding: 0.5rem;
-            }
-          }
-        }
-      }
-
-      #img1 {
-        border-radius: 5px 5px 0 0;
-      }
-      #img2 {
-        border-radius: 0;
-      }
-      #img3 {
-        border-radius: 0;
-      }
-      #img4 {
-        border-radius: 0 0 5px 5px;
-      }
-    }
-  }
-
-  .techs {
-    padding: 0;
-    flex-wrap: wrap;
-
-    i {
-      font-size: 3rem;
-    }
-  }
-}
+@import "mobile";
