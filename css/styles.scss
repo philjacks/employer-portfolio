@@ -131,6 +131,8 @@ main {
   justify-content: center;
 
   .to-top {
+    display: none;
+
     i {
       position: fixed;
       bottom: 2rem;
@@ -297,6 +299,7 @@ main {
             &:hover {
               background-color: $tertiary-color;
               color: $primary-color;
+              cursor: pointer;
               transition: 0.5s ease;
 
               i {
@@ -314,7 +317,6 @@ main {
       &:hover {
         .overlay {
           opacity: 1;
-          cursor: pointer;
         }
       }
     }

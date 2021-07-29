@@ -160,6 +160,10 @@ main {
           justify-content: center;
 }
 
+main .to-top {
+  display: none;
+}
+
 main .to-top i {
   position: fixed;
   bottom: 2rem;
@@ -358,6 +362,7 @@ main .projects .item .overlay .project-links a {
 main .projects .item .overlay .project-links a:hover {
   background-color: #eff6e0;
   color: #212529;
+  cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -372,7 +377,6 @@ main .projects .item .overlay .project-links .git-link {
 
 main .projects .item:hover .overlay {
   opacity: 1;
-  cursor: pointer;
 }
 
 main .techs {
